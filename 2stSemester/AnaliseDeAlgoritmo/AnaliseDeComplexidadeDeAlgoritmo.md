@@ -38,8 +38,8 @@ function maior(vetorInteiros: int[]) {
 
 - Seja _f_ uma função de complexidade tal que _f(n)_ é o número de comparações entre os elementos de _A_, se _A_ contiver _n_ elementos
 
-```
-     (n-1)
-f(n) = ∑ 1
-     (i=1)
-```
+**Anotação**
+
+$$
+f(n) = \sum_{i=1}^{n-1}1
+$$
