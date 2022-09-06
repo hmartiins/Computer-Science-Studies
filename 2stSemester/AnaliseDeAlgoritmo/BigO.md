@@ -5,34 +5,25 @@
 - A _notação O_ é utilizada para expressar comparativamente o crescimento assintótico de duas funções
 
 - No estudo da complexidade de algoritmos é mais interessante saber como se comportam suas funções de custo à medida que aumentamos o valor de _n_, do que conhecer valores das funções correspondentes a valores particulares de _n_
-  - Por exemplo, é mais importante saber que o número de operações executadas num algoritmo dobra se dobrarmos o valor de n, do que saber que para n = 100 são executadas 300 operações
+  - Por exemplo, é mais importante saber que o número de operações executadas num algoritmo dobra se dobrarmos o valor de _n_, do que saber que para _n_ = _100_ são executadas _300_ operações
 - A _notação O_ nos permite ignorar constantes
 - Embora possamos incluir constantes _na notação O_, não há nenhuma razão para fazermos isso
-- Por exemplo:
-  $
-  5n + 4 = O(n)
-  $
-  ao invés de
-  $
-  O(5n + 4)
-  $
-- Ao dizermos que uma função de complexidade g(n) é O(f(n)), queremos dizer que as duas funções g(n) e f(n) tendem ao infinito com a mesma velocidade, ou que têm o mesmo comportamento assintótico
+- Por exemplo: $5n + 4 = O(n)$ ao invés de $O(5n + 4)$
+- Ao dizermos que uma função de complexidade _g(n)_ é _O(f(n))_, queremos dizer que as duas funções _g(n)_ e _f(n)_ tendem ao infinito com a mesma velocidade, ou que têm o mesmo comportamento assintótico
 
-  - Por definição
-    $
-  g(n) = O(f(n))
-  $
-    se
-    $
+  - Por definição $g(n) = O(f(n))$ se
+    
+  $$
   \lim_{n \to \infty}\frac{g(n)}{f(n)} = c
-  $
-    onde c é uma constante
+  $$
 
 - Por exemplo, ao dizermos que $g(n) = O(n2)$, em matemática essa informação é expressa por um limite:
+
   $$
     \lim_{n \to \infty}\frac{g(n)}{n^2} = c
   $$
 
+## Exemplo
 | -                                            | $n$      | $g(n)$        | $f(n)$        | $c$          |
 | -------------------------------------------- | -------- | ------------- | ------------- | ------------ |
 | $g(n) = 5n^2 + 15$                           | $10$     | $515$         | $100$         | $5,1500$     |
